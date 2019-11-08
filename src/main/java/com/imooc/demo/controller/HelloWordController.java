@@ -8,9 +8,10 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
-@Controller()
+@Controller
 @RequestMapping("/hello")
 public class HelloWordController {
+
 //    @Autowired
 //    private HelloWordService helloWordService;
 //    @Autowired
@@ -21,7 +22,7 @@ public class HelloWordController {
                             Model model){
         String content = name + " 你好！欢迎访问JF的网站！ \n welcome to JF's webSite!";//helloWordService.sayHello(name);
         model.addAttribute("content", content);
-        System.out.println(content);
+//        System.out.println(content);
         return "thymleaf";
     }
 

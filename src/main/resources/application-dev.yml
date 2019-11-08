@@ -1,6 +1,7 @@
 front:
   say: hello
 
+
 #spring:
 #  thymeleaf:
 #    cache: false
@@ -58,4 +59,9 @@ front:
 #        testOnBorrow: true
 #        testOnReturn: true
 #     time: 5000
-
+logging:
+  path: /usr/local/data/log
+spring:
+  mvc:
+    favicon:
+      enabled: true
