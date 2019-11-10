@@ -20,6 +20,7 @@ public class WebHookController {
 
     @PostMapping
     public Boolean webhook(@RequestBody HashMap<String,Object> payLoad, HttpServletRequest request) throws JsonProcessingException {
+        logger.info("================== 验证域名有效性 ========================");
         String event = request.getHeader(X_GitHub_Event);
         String guid = request.getHeader(X_GitHub_Delivery);
         String digest = request.getHeader(X_Hub_Signature);
