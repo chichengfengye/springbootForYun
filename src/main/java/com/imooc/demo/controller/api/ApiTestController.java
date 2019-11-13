@@ -35,7 +35,7 @@ public class ApiTestController {
         while (headers.hasMoreElements()) {
             String headerName = headers.nextElement();
             String value = request.getHeader(headerName);
-            logger.info("========HEADER: " + headerName+"="+value);
+            logger.info("========HEADER: " + headerName + "=" + value);
         }
         return dateFormat.format(new Date());
     }
